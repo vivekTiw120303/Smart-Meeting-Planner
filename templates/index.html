@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Meeting Planner</title>
+  <script defer src="/static/script.js"></script>
+</head>
+<body>
+  <h1>Smart Meeting Planner</h1>
+
+  <h3>Enter JSON for /slots</h3>
+  <textarea id="jsonInput" rows="10" cols="50">
+{
+  "users": [
+    { "id": 1, "busy": [["09:00","10:30"], ["13:00","14:00"]] },
+    { "id": 2, "busy": [["11:00","12:00"], ["15:00","16:00"]] }
+  ]
+}
+  </textarea><br>
+  <button onclick="sendSlots()">Submit Slots</button>
+
+  <h3>Suggest Slots</h3>
+  Duration (mins): <input type="number" id="duration" value="30" />
+  <button onclick="getSuggestions()">Suggest</button>
+
+  <h3>Suggested Slots</h3>
+  <table border="1" id="resultsTable">
+    <tr><th>Start</th><th>End</th></tr>
+  </table>
+</body>
+</html>
