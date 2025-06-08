@@ -5,7 +5,7 @@ A lightweight FastAPI-based meeting planner that finds the earliest common free 
 ## 🚀 How to Run
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smart-meeting-planner.git
+git clone https://github.com/vivekTiw120303/smart-meeting-planner.git
 cd smart-meeting-planner
 python -m venv venv
 venv\Scripts\activate  # or source venv/bin/activate on Linux/Mac
